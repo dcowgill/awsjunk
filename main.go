@@ -12,7 +12,7 @@ var (
 )
 
 func main() {
-	var rootCmd = &cobra.Command{Use: "awsutil"}
+	var rootCmd = &cobra.Command{Use: "awsjunk"}
 	f := rootCmd.PersistentFlags() // shorthand
 	f.StringVarP(&profile, "profile", "p", fromEnv("AWS_PROFILE", "default"), "AWS profile")
 	f.StringVarP(&region, "region", "r", fromEnv("AWS_REGION", "eu-west-1"), "AWS region")
